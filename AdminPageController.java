@@ -5,11 +5,15 @@
  */
 package com.dt.projects.client;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 /**
  * FXML Controller class
@@ -18,6 +22,9 @@ import javafx.fxml.Initializable;
  */
 public class AdminPageController implements Initializable {
     private Main main;
+    
+    @FXML
+    private Pane adminStage;
     /**
      * Initializes the controller class.
      */
@@ -28,7 +35,10 @@ public class AdminPageController implements Initializable {
     }    
 
     @FXML
-    private void onStaff(Event event) {
+    private void onStaff(Event event) throws IOException {
+        
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("staff.fxml"));
+        adminStage.getChildren().setAll(pane);
     }
 
     @FXML

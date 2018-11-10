@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Label layoutX="-52.0" layoutY="7.0" prefHeight="69.0" prefWidth="766.0" text="                 CUSTOMER ORDER">
+         <font>
+            <Font name="Cambria Bold Italic" size="48.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.65" centerY="0.6142857142857143" cycleMethod="REFLECT" radius="0.32558139534883723">
+               <stops>
+                  <Stop color="#243a3c" />
+                  <Stop color="#33aeeb" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Separator layoutX="158.0" layoutY="42.0" prefHeight="48.0" prefWidth="347.0" />
+   </children>
+</AnchorPane>

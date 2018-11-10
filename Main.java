@@ -20,18 +20,10 @@ public class Main extends Application{
     @Override
     public void start(Stage stage) throws Exception {
         
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("adminPage.fxml"));
-        //loader.setController(new FormController()); 
+        Parent root = FXMLLoader.load(getClass().getResource("adminPage.fxml"));
         
-        Parent root = loader.load();
-        
-        AdminPageController controller = loader.getController();
-        
-        controller.setMain(this);
-        
-        stage.setScene(new Scene(root));
-        
-        stage.setTitle("Restaurant Billing");
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
         stage.show();
     }
     
